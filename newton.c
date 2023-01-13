@@ -101,18 +101,3 @@ double norm(int n, double* a)
 	return sqrt(res);
 }
 
-
-/* This code cannot work:
-double* (*vectorize(double (*f)(double)))(double*)
-{
-	double* fvect(double* x)
-	{
-		double* res;
-		res = (double*)malloc(sizeof(double));
-		res[0] = f(x[0]);
-		return res;
-	}
-	return fvect;
-}
-*/
-
