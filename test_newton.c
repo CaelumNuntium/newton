@@ -28,10 +28,8 @@ int main(int argc, char* argv[])
 	x = (double*)malloc(n * sizeof(double));
 	#ifdef VECTORIZE
 	newton(n, fvect, nmax, &x0, x);
-	//newton(n, vectorize(f), nmax, &x0, x);
 	printf("x = %lf\n", x[0]);
 	zero = fvect(x);
-	//zero = (vectorize(f))(x);
 	#else
 	newton(n, f, nmax, x0, x);
 	zero = f(x);
