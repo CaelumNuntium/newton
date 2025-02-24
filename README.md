@@ -1,2 +1,2 @@
 # newton
-Newton's method
+A simple program implementing the multidimensional Newton method for finding the zero of a given function.
